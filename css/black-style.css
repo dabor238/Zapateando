@@ -83,7 +83,7 @@ h3{ font-size:20pt; font-weight:300; line-height:normal; }
 h4{ font-size:18pt; font-weight:600; }
 h5{ font-size:14pt; font-weight:600; }
 h6{ font-size:12pt; font-weight:600; }
-p{ font-size:13px;}
+p { font-family: muli; font-size: 13px;}
 
 a, a:visited, a:hover, a:active , a:link{
 color: inherit;
