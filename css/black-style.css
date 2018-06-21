@@ -705,7 +705,7 @@ li > a:only-child:after { content: ''; }
   position:relative;
   width: 100%;
   height:auto;
-  padding:90px 0 90px 0;
+  padding:10px 0 40px 0;
   overflow-x:hidden;
   background: rgba(0,0,70,1); /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, rgba(0,0,70,1) , rgba(119,76,117,0.9)); /* Chrome 10-25, Safari 5.1-6 */
