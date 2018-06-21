@@ -13,7 +13,7 @@ border:1px solid #999;
 .navbar-default{ position:fixed; border-bottom:1px groove rgba(255,255,255,0); top:0px;}
 .navbar-brand { left:30px;}
 .sticky-nav .navbar-brand{position:absolute; top:10px;}
-.sticky-nav{ position:fixed; height:70px; top:0px; left:0px;}
+.sticky-nav{ position:fixed; height:100px; top:0px; left:0px;}
 .navbar-brand img{ width:90%;}
 #main-menu {
   position:absolute;
