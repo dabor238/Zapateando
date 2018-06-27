@@ -162,14 +162,14 @@ $(function() {
 });
 
 // countDown
- $(function(){
- $('#given_date').countdowntimer({
-  dateAndTime : "2019/01/01 00:00:00",
-  size : "lg",
-  regexpMatchFormat: "([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})",
-  regexpReplaceWith: "$1<sup>days</sup> $2<sup>hours</sup> $3<sup>mnt</sup> $4<sup>sec</sup>"
-   });
- });
+ //$(function(){
+ //$('#given_date').countdowntimer({
+ // dateAndTime : "2019/01/01 00:00:00",
+ // size : "lg",
+ // regexpMatchFormat: "([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})",
+ // regexpReplaceWith: "$1<sup>days</sup> $2<sup>hours</sup> $3<sup>mnt</sup> $4<sup>sec</sup>"
+ //  });
+ //});
  
 //slideshow background
 $(function() {
@@ -203,121 +203,126 @@ $(function() {
 });
 
    // Magnific Popup img
-   $('.big-img').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		closeOnContentClick: false,
-		closeBtnInside: false,
-		mainClass: 'mfp-with-zoom mfp-img-mobile',
-		image: {
-			verticalFit: true,
-		},
-		gallery: {
-			enabled: false
-		},
-		zoom: {
-			enabled: true,
-			duration: 300, // don't foget to change the duration also in CSS
-			opener: function(element) {
-				return element.find('img');
-			}
-		}
+ //  $('.big-img').magnificPopup({
+	//	delegate: 'a',
+	//	type: 'image',
+	//	closeOnContentClick: false,
+	//	closeBtnInside: false,
+	//	mainClass: 'mfp-with-zoom mfp-img-mobile',
+	//	image: {
+	//		verticalFit: true,
+	//	},
+	//	gallery: {
+	//		enabled: false
+	//	},
+	//	zoom: {
+	//		enabled: true,
+	//		duration: 300, // don't foget to change the duration also in CSS
+	//		opener: function(element) {
+	//			return element.find('img');
+	//		}
+	//	}
 		
-	});
+	//});
    
    // Magnific Popup dailymotion
-$('.big-video').magnificPopup({
-  type: 'iframe',
-  iframe: {
-    patterns: {
-      dailymotion: {
-        index: 'dailymotion.com',
-        id: function(url) {        
-            var m = url.match(/^.+dailymotion.com\/(video|hub)\/([^_]+)[^#]*(#video=([^_&]+))?/);
-            if (m !== null) {
-                if(m[4] !== undefined) {
-                    return m[4];
-                }
-                return m[2];
-            }
-            return null;
-        },
-        src: 'http://www.dailymotion.com/embed/video/%id%'
-      }
-    }
-  }
-});
+//$('.big-video').magnificPopup({
+//  type: 'iframe',
+//  iframe: {
+//    patterns: {
+//      dailymotion: {
+//        index: 'dailymotion.com',
+//        id: function(url) {        
+//            var m = url.match(/^.+dailymotion.com\/(video|hub)\/([^_]+)[^#]*(#video=([^_&]+))?/);
+//            if (m !== null) {
+//                if(m[4] !== undefined) {
+//                    return m[4];
+//                }
+//                return m[2];
+//            }
+//            return null;
+//        },
+//        src: 'http://www.dailymotion.com/embed/video/%id%'
+//      }
+//    }
+//  }
+//});
 
 // Magnific Popup youtube
-$('.big-youtube').magnificPopup({
-    disableOn: 700,
-    type: 'iframe',
-    mainClass: 'mfp-with-zoom mfp-img-mobile',
-    removalDelay: 0,
-    preloader: false,
-    fixedContentPos: false,
-    iframe: {
-        patterns: {
-            youtube: {
-                src: 'http://www.youtube.com/embed/%id%?autoplay=1&rel=0'
-            }
-        }
-    }
-});
+//$('.big-youtube').magnificPopup({
+//    disableOn: 700,
+//    type: 'iframe',
+//    mainClass: 'mfp-with-zoom mfp-img-mobile',
+//    removalDelay: 0,
+//    preloader: false,
+//    fixedContentPos: false,
+//    iframe: {
+//        patterns: {
+//            youtube: {
+//                src: 'http://www.youtube.com/embed/%id%?autoplay=1&rel=0'
+//            }
+//        }
+//    }
+//});
 
 
 
 // service
-var $container = $('#services');
-    $container.isotope({
-        itemSelector: '.service',
-        filter: '.day1',
-        hiddenStyle: {
-        opacity: 0
-        },
-        visibleStyle: {
-        opacity: 1
-        }
-});
-$('.filt-serv').on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    if ( $this.hasClass('selected') ) {
-        return false;
-        }
-    var $optionSet = $this.parents();
-    $optionSet.find('.selected').removeClass('selected');
-    $this.addClass('selected');
+//var $container = $('#services');
+//    $container.isotope({
+//        itemSelector: '.service',
+//        filter: '.day1',
+//        hiddenStyle: {
+//        opacity: 0
+//        },
+//        visibleStyle: {
+//        opacity: 1
+//        }
+//});
+
+
+//$('.filt-serv').on('click', function(e) {
+//    e.preventDefault();
+//    var $this = $(this);
+//    if ( $this.hasClass('selected') ) {
+//        return false;
+//        }
+//    var $optionSet = $this.parents();
+//    $optionSet.find('.selected').removeClass('selected');
+//    $this.addClass('selected');
             
-    var selector = $(this).attr('data-filter');
-    $container.isotope({ 
-    filter: selector,
-});
-return false;
-});
+//    var selector = $(this).attr('data-filter');
+//    $container.isotope({ 
+//    filter: selector,
+//    });
+
+//return false;
+//});
 
 // projects
-var $containerpro = $('#projects-wrap');
-    $containerpro.isotope({
-        itemSelector: '.item',
-        filter: '*'
-});
-$('.filt-projects').on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    if ( $this.hasClass('actived') ) {
-        return false;
-        }
-    var $optionSetpro = $this.parents();
-    $optionSetpro.find('.actived').removeClass('actived');
-    $this.addClass('actived');
+//var $containerpro = $('#projects-wrap');
+//    $containerpro.isotope({
+//        itemSelector: '.item',
+//        filter: '*'
+//    });
+
+//$('.filt-projects').on('click', function(e) {
+//    e.preventDefault();
+//    var $this = $(this);
+//    if ( $this.hasClass('actived') ) {
+//        return false;
+//        }
+//    var $optionSetpro = $this.parents();
+//    $optionSetpro.find('.actived').removeClass('actived');
+//    $this.addClass('actived');
             
-    var selector = $(this).attr('data-project');
-    $containerpro.isotope({ 
-    filter: selector,
-});
-return false;
-});
+//    var selector = $(this).attr('data-project');
+//    $containerpro.isotope({ 
+//    filter: selector,
+//    });
+
+//return false;
+//});
 
 
 // owlCarousel brand
